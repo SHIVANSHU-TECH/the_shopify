@@ -1,0 +1,52 @@
+[
+  {
+    "title": "Brand overview",
+    "content": "Aviva Beauty is an Indian skincare brand focused on self-care and well-being. Founded by Vanshika Chachra. Tagline themes: More than just beauty. One step away from #skincare goals. Products are mineral oil free, paraben free, vegan, and dermatologically tested. Standards messaging includes FDA, GMP, ISO, and CE. Website: avivabeauty.in. Support email: support@avivabeauty.in.",
+    "url": "/"
+  },
+  {
+    "title": "Daily Gentle Cleanser",
+    "content": "Water-based face wash / daily gentle cleanser. Customers describe it as refreshing, cleans without making skin dry. Available in multiple sizes including 100ml. Category: Face Care.",
+    "url": "/products/daily-gentle-cleanser"
+  },
+  {
+    "title": "Creme Skin Toner",
+    "content": "Aviva Beauty creme skin toner for face care routines. Pair with cleanser for a simple everyday ritual. Category: Face Care.",
+    "url": "/products/creme-skin-toner"
+  },
+  {
+    "title": "Hydrating Body Lotion Roll-on",
+    "content": "Hydrating body lotion in roll-on format. Customers say it is not sticky and feels lightweight. Category: Body Care.",
+    "url": "/products/hydrating-body-lotion-in-roll-on"
+  },
+  {
+    "title": "Aqua Gel Sunscreen",
+    "content": "Aqua gel sunscreen for everyday sun care. Category: Sun Care / Face Care.",
+    "url": "/products/aqua-gel-sunscreen"
+  },
+  {
+    "title": "Gift hampers and combos",
+    "content": "Aviva offers gift hampers and combo sets such as special skincare gift hampers pairing toner + cleanser or sunscreen + cleanser.",
+    "url": "/collections/all-products"
+  },
+  {
+    "title": "Categories",
+    "content": "Shop by category: Face Care and Body Care. Collection all-products lists bestsellers.",
+    "url": "/collections/all-products"
+  },
+  {
+    "title": "Shipping and support",
+    "content": "For order help, shipping, or unresolved questions, direct customers to WhatsApp +91 9810127038 or support@avivabeauty.in /pages/contact. Do not invent order status or delivery promises.",
+    "url": "/pages/contact"
+  },
+  {
+    "title": "Returns",
+    "content": "Returns and exchanges follow the store refund policy. Do not promise eligibility.",
+    "url": "/policies/refund-policy"
+  },
+  {
+    "title": "Safety",
+    "content": "Do not diagnose skin conditions or guarantee outcomes. For pregnancy, medical conditions, adverse reactions, or persistent irritation, recommend consulting a qualified dermatologist. Concierge provides product information only.",
+    "url": "/pages/contact"
+  }
+]

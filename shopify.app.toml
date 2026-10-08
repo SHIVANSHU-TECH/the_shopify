@@ -1,0 +1,15 @@
+name = "Aviva Concierge"
+client_id = "REPLACE_WITH_SHOPIFY_APP_CLIENT_ID"
+application_url = "https://REPLACE_WITH_DEPLOYED_APP_URL"
+embedded = true
+
+[access_scopes]
+scopes = "read_products,read_content"
+
+[app_proxy]
+url = "https://REPLACE_WITH_DEPLOYED_APP_URL"
+subpath = "aviva-concierge"
+prefix = "apps"
+
+[build]
+automatically_update_urls_on_dev = true

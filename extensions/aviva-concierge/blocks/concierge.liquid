@@ -1,0 +1,16 @@
+{% if block.settings.enabled %}
+  <div id="AvivaConcierge" class="aviva-concierge" data-endpoint="{{ block.settings.endpoint }}" data-whatsapp="https://wa.me/{{ block.settings.whatsapp | replace: ' ', '' | replace: '+', '' | replace: '-', '' }}" data-whatsapp-label="{{ block.settings.whatsapp | escape }}" data-support-url="{{ block.settings.support_url }}" data-product-title="{{ product.title | escape }}" data-product-url="{{ product.url }}" data-product-description="{{ product.description | strip_html | escape }}">
+    <button class="aviva-concierge__launcher" type="button" aria-controls="AvivaConciergeDialog" aria-expanded="false">Ask Aviva</button>
+    <section id="AvivaConciergeDialog" class="aviva-concierge__dialog" role="dialog" aria-modal="true" aria-label="Aviva product concierge" hidden>
+      <header><div><p>AVIVA CONCIERGE</p><strong>How may I guide your ritual?</strong></div><button type="button" data-concierge-close aria-label="Close chat">×</button></header>
+      <div class="aviva-concierge__notice">For product information only. Not medical advice. If unanswered, we connect you on WhatsApp.</div>
+      <div class="aviva-concierge__messages" aria-live="polite"><p class="assistant">I can help with formulations, ingredients, rituals, and policies.</p></div>
+      <div class="aviva-concierge__prompts">{% assign prompts = block.settings.prompts | split: '|' %}{% for prompt in prompts %}<button type="button" data-concierge-prompt>{{ prompt | strip }}</button>{% endfor %}</div>
+      <form class="aviva-concierge__form"><label class="visually-hidden" for="AvivaChatInput">Your message</label><textarea id="AvivaChatInput" required maxlength="1000" placeholder="Ask about your skin ritual…"></textarea><button type="submit">Send</button></form>
+    </section>
+  </div>
+  {{ 'concierge.css' | asset_url | stylesheet_tag }}<script src="{{ 'concierge.js' | asset_url }}" defer></script>
+{% endif %}
+{% schema %}
+{"name":"Aviva Concierge","target":"body","stylesheet":"concierge.css","javascript":"concierge.js","settings":[{"type":"checkbox","id":"enabled","label":"Enable concierge","default":true},{"type":"text","id":"endpoint","label":"API base URL","default":"https://YOUR-PROXY.example.com"},{"type":"text","id":"whatsapp","label":"WhatsApp number","default":"+91 9810127038"},{"type":"url","id":"support_url","label":"Support URL","default":"/pages/contact"},{"type":"textarea","id":"prompts","label":"Suggested prompts separated by |","default":"Which cleanser is right for me?|Tell me about the body lotion|Do you ship across India?"}]}
+{% endschema %}
